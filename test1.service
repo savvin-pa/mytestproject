@@ -1,0 +1,10 @@
+[Unit]
+Description=network service
+After=network.target 
+#как посмотреть какие параметры существуют для директивы After
+[Service]
+User=savvin
+Group=savvin
+ExecStart=/usr/local/bin/test.sh
+[Install]
+WantedBy=multi-user.target
