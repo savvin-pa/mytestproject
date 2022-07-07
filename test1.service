@@ -1,4 +1,5 @@
 [Unit]
+<<<<<<< HEAD
 Description=test connection network service
 After=network.target 
 #как посмотреть какие параметры существуют для директивы After
@@ -6,5 +7,14 @@ After=network.target
 User=peter
 Group=peter
 ExecStart=/home/peter/networktest.sh
+=======
+Description=network service
+After=network.target 
+#как посмотреть какие параметры существуют для директивы After
+[Service]
+User=savvin
+Group=savvin
+ExecStart=/usr/local/bin/test.sh
+>>>>>>> 7f6850c0d7df21e4c74d11037450e84fb8414358
 [Install]
 WantedBy=multi-user.target
