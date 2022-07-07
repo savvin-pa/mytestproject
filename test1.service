@@ -1,0 +1,10 @@
+[Unit]
+Description=test connection network service
+After=network.target 
+#как посмотреть какие параметры существуют для директивы After
+[Service]
+User=peter
+Group=peter
+ExecStart=/home/peter/networktest.sh
+[Install]
+WantedBy=multi-user.target
